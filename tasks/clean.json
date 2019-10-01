@@ -1,0 +1,20 @@
+{
+  "stacks": {
+    "root": {
+      "commands": {
+        "clean-node": "rm -rf node_modules"
+      }
+    },
+    "frontend": {
+      "options": {
+        "cwd": "./src/@apps/frontend/"
+      },
+      "commands": {
+        "clean": "rm -rf .cache",
+        "clean-node": "rm -rf node_modules",
+        "clean-dist": "rm -rf dist",
+        "#exit": "#exit"
+      }
+    }
+  }
+}

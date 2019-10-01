@@ -1,0 +1,13 @@
+{
+  "references": [
+    {
+      "path": "./@lib/"
+    },
+    {
+      "path": "./@shared/"
+    }
+  ],
+  "compilerOptions": {
+    "composite": true
+  }
+}

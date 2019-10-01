@@ -1,0 +1,16 @@
+{
+  "name": "@rxdi/monorepo-example",
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "postinstall": "npx repo run postinstall",
+    "start": "npx repo run start",
+    "clean": "npx repo run clean"
+  },
+  "devDependencies": {
+    "@rxdi/monorepo": "0.0.24",
+    "typescript": "3.6.3"
+  },
+  "private": true
+}

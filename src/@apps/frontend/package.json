@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "postinstall": "npx parcel build ./index.html --experimental-scope-hoisting",
+    "start": "npx parcel ./index.html"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}

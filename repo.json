@@ -1,0 +1,35 @@
+{
+  "stacks": {
+    "start": {
+      "commands": {
+        "start": "npx repo run -c ./tasks/run.json"
+      }
+    },
+    "clean": {
+      "commands": {
+        "start": "npx repo run -c ./tasks/clean.json",
+        "#exit": "#exit"
+      }
+    },
+    "postinstall": {
+      "commands": {
+        "precompile": "npx repo compile",
+        "install": "npx repo install",
+        "distributeCompile": "npx repo compile",
+        "exit": "#exit"
+      }
+    },
+    "example": {
+      "options": {
+        "cwd":"./src/@apps/frontend",
+        "signal": "EXIT_SIGNAL_TEST"
+      },
+      "commands": {
+        "outOfNpmScopeCommand_ls_lha": "> ls -lha",
+        "outOfNpmScopeCommand_echo": "> echo EXIT_SIGNAL_TEST",
+        "outOfNpmScopeCommand_cat": "> cat package.json",
+        "exitProcessCommand_special_symbol_#exit": "#exit"
+      }
+    }
+  }
+}

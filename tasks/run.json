@@ -1,0 +1,21 @@
+{
+  "stacks": {
+    "frontend": {
+      "options": {
+        "depends": ["compile"],
+        "cwd": "./src/@apps/frontend"
+      },
+      "commands": {
+        "start": "npm start"
+      }
+    },
+    "compile": {
+      "options": {
+        "signal": "Starting compilation"
+      },
+      "commands": {
+        "compile": "repo compile --watch"
+      }
+    }
+  }
+}
